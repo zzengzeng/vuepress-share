@@ -1,10 +1,36 @@
 language: node_js
-sudo: required
-node_js:
-  - 8.11.1
+node_js: stable
+
+# Travis-CI Caching
 cache:
   directories:
     - node_modules
+
+# S: Build Lifecycle
+install:
+  - yarn install
+
+before_script:
+
+# 无其他依赖项所以执行npm run build 构建就行了
 script:
-  - ./deploy.sh
-branch: master
+  - yarn build
+
+after_script:
+  - cd ./dist
+  - ls
+  - git init
+  - git add -A
+  - git commit -m "deploy"
+  - git push -f "https://${access_token}@${GH_REF}" master:gh-pages
+# E: Build LifeCycle
+
+#指定分支，只有指定的分支提交时才会运行脚本
+branches:
+  only:
+    - master
+
+env:
+ global:
+   - GH_REF: github.com/zzengzeng/vuepress-demo.git
+   - BRANCHNAME: gh-pages
