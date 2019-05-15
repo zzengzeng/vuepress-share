@@ -1,5 +1,5 @@
 module.exports = {
-    title:'zt',
+    title:'zz',
     description: '',
     dest: './dist',
     base: '/vuepress-demo/',
