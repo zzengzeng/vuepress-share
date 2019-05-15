@@ -21,6 +21,8 @@ after_script:
   - ls
   - git init
   - git add -A
+  - git config user.name "${USERNAME}"
+  - git config user.email "${EMAIL}"
   - git commit -m "deploy"
   - git push -f "https://${access_token}@${GH_REF}" master:gh-pages
 # E: Build LifeCycle
@@ -32,5 +34,7 @@ branches:
 
 env:
   global:
+    - USERNAME: zzengzeng
+    - EMAIL: 2229425959@qq.com
     - GH_REF: github.com/zzengzeng/vuepress-demo.git
     - BRANCHNAME: gh-pages
