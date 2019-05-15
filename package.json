@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "vuepress": "^0.14.8"
+    "vuepress": "^1.0.0-alpha.48"
   },
   "scripts": {
     "deploy": "bash deploy.sh",
