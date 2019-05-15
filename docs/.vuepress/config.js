@@ -5,11 +5,11 @@ module.exports = {
     base: '/vuepress-demo/',
     themeConfig: {
         nav: [
-            { text: 'demo', link: '/share/' }
+            { text: 'vuepress-demo', link: '/share/' }
         ],
         siderbar: [
             {
-                title: 'demo',
+                title: 'vuepress-demo',
                 collapsable: false,
                 children: []
             }
