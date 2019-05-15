@@ -24,7 +24,7 @@ after_script:
   - git config user.name "${USERNAME}"
   - git config user.email "${EMAIL}"
   - git commit -m "deploy"
-  - git push -f "https://${access_token}@${GH_REF}" master:gh-pages
+  - git push -f "https://${vuepress_token}@${GH_REF}" master:gh-pages
 # E: Build LifeCycle
 
 #指定分支，只有指定的分支提交时才会运行脚本
