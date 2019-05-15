@@ -1,6 +1,8 @@
 module.exports = {
     title:'zt',
     description: '',
+    dest: './dist',
+    base: '/vuepress-demo/',
     themeConfig: {
         nav: [
             { text: '分享', link: '/share/' }
