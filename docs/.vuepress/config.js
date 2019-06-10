@@ -1,7 +1,7 @@
 module.exports = {
     title:'zz',
     description: '',
-    dest: './dist',
+    dest: './docs/dist',
     base: '/',
     themeConfig: {
         nav: [
