@@ -2,7 +2,7 @@ module.exports = {
     title:'zz',
     description: '',
     dest: './docs/dist',
-    base: '/vuepress-demo/',
+    base: '/',
     themeConfig: {
         nav: [
             { text: 'vuepress-demo', link: '/share/' }
