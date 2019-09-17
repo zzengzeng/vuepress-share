@@ -1,15 +1,18 @@
 module.exports = {
     title:'zz',
     description: '',
+    head: [
+        ['link', { rel: 'icon', href: '/vuepress-demo/images/favicon.png' }]
+    ],
     dest: './docs/dist',
     base: '/vuepress-demo/',
     themeConfig: {
         nav: [
-            { text: 'vuepress-demo', link: '/share/' }
+            { text: 'vuepress', link: '/share/' }
         ],
         siderbar: [
             {
-                title: 'vuepress-demo',
+                title: 'vuepress',
                 collapsable: false,
                 children: []
             }
