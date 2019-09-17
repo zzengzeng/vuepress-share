@@ -4,6 +4,7 @@
   },
   "scripts": {
     "deploy": "bash deploy.sh",
+    "start": "npx vuepress dev docs",
     "build": "vuepress build docs"
   }
 }
