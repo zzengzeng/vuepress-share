@@ -2,17 +2,18 @@ module.exports = {
     title:'zz',
     description: '',
     head: [
-        ['link', { rel: 'icon', href: '/vuepress-demo/images/favicon.png' }]
+        ['link', { rel: 'icon', href: '/vuepress-share/images/favicon.png' }]
     ],
     dest: './docs/dist',
-    base: '/vuepress-demo/',
+    base: '/vuepress-share/',
     themeConfig: {
         nav: [
-            { text: 'vuepress', link: '/share/' }
+            { text: '首页', link: '/' },
+            { text: '记录', link: '/record/' }
         ],
         siderbar: [
             {
-                title: 'vuepress',
+                title: '记录',
                 collapsable: false,
                 children: []
             }
