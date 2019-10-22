@@ -36,5 +36,5 @@ env:
   global:
     - USERNAME: zzengzeng
     - EMAIL: 2229425959@qq.com
-    - GH_REF: github.com/zzengzeng/vuepress-demo.git
+    - GH_REF: github.com/zzengzeng/vuepress-share.git
     - BRANCHNAME: gh-pages
